@@ -7,7 +7,7 @@
  * @license           GPL-2.0-or-later
  *
  * Plugin Name:       Threads Embed
- * Plugin URI:        https://gist.github.com/dartiss/97b7da945b9de709dba8fed5a7f23ede
+ * Plugin URI:        https://github.com/dartiss/threads-embed
  * Description:       🧵 Add Threads embedding to a WordPress post.
  * Version:           0.1
  * Requires at least: 4.6
@@ -41,8 +41,7 @@ function threads_embed_plugin_meta( $links, $file ) {
 
 		$links = array_merge(
 			$links,
-			array( '<a href="https://github.com/dartiss/threads-embed">' . __( 'Github', 'threads-embed' ) . '</a>' ),
-			array( '<a href="https://github.com/dartiss/threads-embed/issues">' . __( 'Support', 'threads-embed' ) . '</a>' ),
+			array( '<a href="https://github.com/dartiss/threads-embed/discussions">' . __( 'Support', 'threads-embed' ) . '</a>' ),
 			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'threads-embed' ) . '</a>' ),
 		);
 	}
