@@ -5,7 +5,7 @@ Tags: embed, threads, meta, social
 Requires at least: 4.6
 Tested up to: 6.1
 Requires PHP: 8.0
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,10 +38,10 @@ It's now ready to go and there are no settings.
 
 I use semantic versioning, with the first release being 0.1.
 
-= 0.1 =
-* Initial release
+= 0.2 =
+* Enhancement: After finding that the embeds didn't work on my personal site, I realised that some of the embed code that I removed was a fallback mechanism. I've now added it back whilst I try and work out why this is occurring
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial release
+= 0.1 =
+* Fallback output added for when the embed can't be displayed
