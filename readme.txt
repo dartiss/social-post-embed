@@ -34,6 +34,12 @@ Threads Embed is not available from the wordpress.org plugin directory, so must 
 
 It's now ready to go and there are no settings.
 
+== Frequently Asked Questions ==
+
+= Embeds are not appearing - it keeps showing "Cannot embed' =
+
+A number of plugins which make use of JavaScript appear to conflict with Meta's code. Known plugins so far include Query Monitor and Tada.
+
 == Changelog ==
 
 I use semantic versioning, with the first release being 0.1.
