@@ -3,7 +3,7 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: embed, threads, meta, social
 Requires at least: 4.6
-Tested up to: 6.1
+Tested up to: 6.3
 Requires PHP: 8.0
 Stable tag: 0.2
 License: GPLv2 or later
@@ -25,12 +25,10 @@ There are no additional parameters that you can specify, and the embed appears a
 
 == Installation ==
 
-Threads Embed is not available from the wordpress.org plugin directory, so must be downloaded from Github and installed manually.
+Threads Embed can be found and installed via the Plugin menu within WordPress administration (Plugins -> Add New). Alternatively, it can be downloaded from WordPress.org and installed manually...
 
-1. Download the latest release [from Github](https://github.com/dartiss/threads-embed/archive/refs/heads/main.zip), in the form of a Zip file
-2. In your site's admin, head to Plugins -> Add New
-3. Click on the "Upload Plugin" button and follow the instructions to upload the Zip file that was downloaded at step 1
-4. Activate the plugin
+1. Upload the entire `solo-search` folder to your `wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress administration.
 
 It's now ready to go and there are no settings.
 
