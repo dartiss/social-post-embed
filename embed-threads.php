@@ -79,21 +79,24 @@ add_action( 'init', 'register_embed_threads_handler' );
  */
 function embed_threads_handler( $matches, $attr, $threads_url, $rawattr ) {
 
-	$url = false;
+	$url     = false;
+	$rawattr = array(); // Array is not used here.
 
 	// Divide out the link, based on forward slashes. The 4th party should be the ID for the Threads post.
+
 	$split = explode( '/', $threads_url );
 	if ( 't' == $split[3] ) {
 		$url = $split[4];
-	} else {
+	} elseif ( 'post' == $split[4] ) {
+
 		// If not the format I was expecting, look further along the array.
-		if ( 'post' == $split[4] ) {
-			$split2 = explode( '?', $split[5] );
-			$url    = $split2[0];
-		}
+
+		$split2 = explode( '?', $split[5] );
+		$url    = $split2[0];
 	}
 
 	// Now generated the embed code - this is the code currently provided by Threads and is presented as-is.
+
 	if ( ! $url ) {
 		$embed = '<p>Error: Threads URL format not recognised.</p>';
 	} else {
