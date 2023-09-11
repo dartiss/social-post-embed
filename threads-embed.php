@@ -1,20 +1,20 @@
 <?php
 /**
- * Threads Embed
+ * Embed Threads
  *
- * @package           threads-embed
+ * @package           embed-threads
  * @author            David Artiss
  * @license           GPL-2.0-or-later
  *
- * Plugin Name:       Threads Embed
- * Plugin URI:        https://github.com/dartiss/threads-embed
+ * Plugin Name:       Embed Threads
+ * Plugin URI:        https://wordpress.org/plugins/embed-threads/
  * Description:       🧵 Add Threads embedding to a WordPress post.
- * Version:           0.2
+ * Version:           1.1
  * Requires at least: 4.6
  * Requires PHP:      8.0
  * Author:            David Artiss
  * Author URI:        https://artiss.blog
- * Text Domain:       threads-embed
+ * Text Domain:       embed-threads
  * License:           GPL v2 or later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  *
@@ -35,37 +35,39 @@
  * @param    string $file   File in use.
  * @return   string         Links, now with settings added.
  */
-function threads_embed_plugin_meta( $links, $file ) {
+function embed_threads_plugin_meta( $links, $file ) {
 
-	if ( false !== strpos( $file, 'threads-embed.php' ) ) {
+	if ( false !== strpos( $file, 'embed-threads.php' ) ) {
 
 		$links = array_merge(
 			$links,
-			array( '<a href="https://github.com/dartiss/threads-embed/discussions">' . __( 'Support', 'threads-embed' ) . '</a>' ),
-			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'threads-embed' ) . '</a>' ),
+			array( '<a href="https://github.com/dartiss/embed-threads">' . __( 'Github', 'solo-search' ) . '</a>' ),
+			array( '<a href="https://wordpress.org/support/plugin/embed-threads">' . __( 'Support', 'embed-threads' ) . '</a>' ),
+			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'embed-threads' ) . '</a>' ),
+			array( '<a href="https://wordpress.org/support/plugin/embed-threads/reviews/#new-post">' . __( 'Write a Review', 'solo-search' ) . '&nbsp;⭐️⭐️⭐️⭐️⭐️</a>' )
 		);
 	}
 
 	return $links;
 }
 
-add_filter( 'plugin_row_meta', 'threads_embed_plugin_meta', 10, 2 );
+add_filter( 'plugin_row_meta', 'embed_threads_plugin_meta', 10, 2 );
 
 /**
  * Register Threads URL Handler.
  */
-function register_threads_embed_handler() {
+function register_embed_threads_handler() {
 	wp_embed_register_handler(
 		'threads',                          // Unique identifier for this handler.
 		'#https://www\.threads\.net/.*#i',  // The regex for URLs you want to embed.
-		'threads_embed_handler'             // The callback function to run when a match is found.
+		'embed_threads_handler'             // The callback function to run when a match is found.
 	);
 }
 
-add_action( 'init', 'register_threads_embed_handler' );
+add_action( 'init', 'register_embed_threads_handler' );
 
 /**
- * Threads Embed Handler
+ * Embed Threads Handler
  *
  * This is the callback function that will generate the Threads embed HTML.
  *
@@ -73,9 +75,9 @@ add_action( 'init', 'register_threads_embed_handler' );
  * @param  array  $attr          An array containing the embed attributes.
  * @param  string $threads_url   The URL that was matched.
  * @param  array  $rawattr       An array containing the raw (unfiltered) embed attributes.
- * @return string                Threads embed code.
+ * @return string                Threads embedding code.
  */
-function threads_embed_handler( $matches, $attr, $threads_url, $rawattr ) {
+function embed_threads_handler( $matches, $attr, $threads_url, $rawattr ) {
 
 	$url = false;
 

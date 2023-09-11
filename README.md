@@ -1,4 +1,4 @@
-# Threads Embed
+# Embed Threads
 
 <img src="https://artiss.blog/wp-content/uploads/2023/07/icon-128x128-1.png" align="left">🧵 WordPress plugin to add embedding of Threads to the editor.
 
