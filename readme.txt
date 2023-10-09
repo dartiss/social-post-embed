@@ -1,11 +1,11 @@
-=== Embed Threads ===
+=== Social Post Embed ===
 Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: embed, threads, meta, social
 Requires at least: 4.6
 Tested up to: 6.3
 Requires PHP: 8.0
-Stable tag: 1.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,18 +23,21 @@ Once the plugin is installed and activated...
 
 There are no additional parameters that you can specify, and the embed appears as specified by Meta.
 
+**Please Note:**
+This plugin makes use of an external, third-party script, provided my Threads (part of Meta), which allows a Threads post to be displayed in its original format. Their privacy policy can be [found here](https://help.instagram.com/515230437301944).
+
 == Installation ==
 
 Embed Threads can be found and installed via the Plugin menu within WordPress administration (Plugins -> Add New). Alternatively, it can be downloaded from WordPress.org and installed manually...
 
-1. Upload the entire `solo-search` folder to your `wp-content/plugins/` directory.
+1. Upload the entire `social-post-embed` folder to your `wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress administration.
 
 It's now ready to go and there are no settings.
 
 == Frequently Asked Questions ==
 
-= Embeds are not appearing - it keeps showing "Cannot embed' =
+= Embeds are not appearing =
 
 A number of plugins which make use of JavaScript appear to conflict with Meta's code. Known plugins so far include Query Monitor and Tada.
 
@@ -42,10 +45,10 @@ A number of plugins which make use of JavaScript appear to conflict with Meta's 
 
 I use semantic versioning, with the first release being 1.0.
 
-= 1.1 =
-* Enhancement: After finding that the embeds didn't work on my personal site, I realised that some of the embed code that I removed was a fallback mechanism. I've now added it back whilst I try and work out why this is occurring
+= 1.0 =
+* Initial release
 
 == Upgrade Notice ==
 
 = 1.0 =
-* Fallback output added for when the embed can't be displayed
+* Initial release
