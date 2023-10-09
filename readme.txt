@@ -23,6 +23,10 @@ Once the plugin is installed and activated...
 
 There are no additional parameters that you can specify, and the embed appears as specified by Meta.
 
+Iconography is courtesy of the very talented [Shawon](https://www.fiverr.com/shawon300) ♥️
+
+👉 Please visit the [Github page](https://github.com/dartiss/social-post-embed "Github") for the latest code development, planned enhancements and known issues 👈
+
 **Please Note:**
 This plugin makes use of an external, third-party script, provided my Threads (part of Meta), which allows a Threads post to be displayed in its original format. Their privacy policy can be [found here](https://help.instagram.com/515230437301944).
 
