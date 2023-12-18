@@ -54,9 +54,9 @@ I've checked the following and either they have no embedding capability or it's 
 * Gab
 * LinkedIn
 * MeWe
-* Next door
+* Next Door
+* Pocket
 * Quora
-* Reddit
 * Stackoverflow
 * Weare8
 
@@ -65,6 +65,7 @@ And, if you're not already, WordPress natively supports...
 * Facebook
 * Instagram
 * Pinterest
+* Reddit
 * TikTok
 * Tumblr
 * Twitter / X
@@ -93,5 +94,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial release
+= 2.0 =
+* Converted from a Threads specific plugin to a more general version, now support Spoutible embeds as well
