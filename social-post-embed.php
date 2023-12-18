@@ -8,7 +8,7 @@
  *
  * Plugin Name:       Social Post Embed
  * Plugin URI:        https://wordpress.org/plugins/social-post-embed/
- * Description:       🧵 Add Threads embedding to a WordPress post.
+ * Description:       📌 Add embedding for various social media platforms to your WordPress posts
  * Version:           2.0
  * Requires at least: 4.6
  * Requires PHP:      8.0
