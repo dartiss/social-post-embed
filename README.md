@@ -1,6 +1,6 @@
 # Social Post Embed
 
-<img src="https://ps.w.org/social-post-embed/assets/icon-128x128.png" align="left">📌 WordPress plugin to add embedding for various social media platforms to your posts.
+<img src="https://ps.w.org/social-post-embed/assets/icon.svg" width=128px align="left">📌 WordPress plugin to add embedding for various social media platforms to your posts.
 
 A temporary plugin solution to add embedding of various social media platform posts, until such time that they become of WordPress Core. At this moment this plugin will support embedding of Threads and Spoutible posts.
 
