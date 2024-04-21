@@ -29,9 +29,9 @@ function spte_add_plugin_meta( $links, $file ) {
 		$links = array_merge(
 			$links,
 			array( '<a href="https://github.com/dartiss/social-post-embed">' . __( 'Github', 'social-post-embed' ) . '</a>' ),
-			array( '<a href="https://wordpress.org/support/plugin/social-post-embed">' . __( 'Support', 'social-post-embed' ) . '</a>' ),
-			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'social-post-embed' ) . '</a>' ),
-			array( '<a href="https://wordpress.org/support/plugin/social-post-embed/reviews/#new-post">' . __( 'Write a Review', 'social-post-embed' ) . '&nbsp;⭐️⭐️⭐️⭐️⭐️</a>' )
+			array( '<a href="https://wordpress.org/support/plugin/social-post-embed">' . __( 'Support', 'text-domain' ) . '</a>' ),
+			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'text-domain' ) . '</a>' ),
+			array( '<a href="https://wordpress.org/support/plugin/social-post-embed/reviews/?filter=5" title="' . __( 'Rate the plugin on WordPress.org', 'text-domain' ) . '" style="color: #ffb900">' . str_repeat( '<span class="dashicons dashicons-star-filled" style="font-size: 16px; width:16px; height: 16px"></span>', 5 ) . '</a>' ),
 		);
 	}
 
