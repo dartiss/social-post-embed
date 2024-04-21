@@ -8,8 +8,8 @@
  *
  * Plugin Name:       Social Post Embed
  * Plugin URI:        https://wordpress.org/plugins/social-post-embed/
- * Description:       📌 Add embedding for various social media platforms to your WordPress posts
- * Version:           2.0
+ * Description:       Add embedding for various social media platforms to your WordPress posts
+ * Version:           2.0.1
  * Requires at least: 4.6
  * Requires PHP:      8.0
  * Author:            David Artiss
@@ -26,7 +26,7 @@
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
- // Define global to hold the plugin base file name.
+// Define global to hold the plugin base file name.
 
 if ( ! defined( 'SOCIAL_POST_EMBED_PLUGIN_BASE' ) ) {
 	define( 'SOCIAL_POST_EMBED_PLUGIN_BASE', plugin_basename( __FILE__ ) );
@@ -42,6 +42,6 @@ require_once $functions_dir . 'spoutible.php';     // Add Spoutible embedding.
 
 if ( is_admin() ) {
 
-	include_once $functions_dir . 'admin.php';     // Administration configuration.
+	include_once $functions_dir . 'shared.php';    // Administration configuration.
 
 }

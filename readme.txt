@@ -3,13 +3,13 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: threads, spoutible, embed, social
 Requires at least: 4.6
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 8.0
-Stable tag: 2.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-📌 Add embedding for various social media platforms to your WordPress posts.
+Add embedding for various social media platforms to your WordPress posts.
 
 == Description ==
 
@@ -22,12 +22,13 @@ Using the plugin is incredibly simple. Once it's installed and activated...
 
 There are no additional parameters that you can specify, and the embed appears as specified by their originating sites.
 
-Iconography is courtesy of the very talented [Shawon](https://www.fiverr.com/shawon300) ♥️
+Iconography is courtesy of the very talented [Shawon](https://www.fiverr.com/shawon300).
 
-👉 Please visit the [Github page](https://github.com/dartiss/social-post-embed "Github") for the latest code development, planned enhancements and known issues 👈
+**Please visit the [Github page](https://github.com/dartiss/social-post-embed "Github") for the latest code development, planned enhancements and known issues**
 
 **Please Note:**
 This plugin makes use of external scripts, to provide the embedding, all of which are provided by the originating website (rather than a third-party solution). These are...
+
 * Threads (part of Meta). Their privacy policy can be [found here](https://help.instagram.com/515230437301944).
 * Spoutible. The Privacy Policy [is here](https://help.spoutible.com/support/solutions/articles/150000044459-privacy-policy).
 
@@ -84,6 +85,9 @@ A number of plugins which make use of JavaScript appear to conflict with Meta's 
 
 I use semantic versioning, with the first release being 1.0.
 
+= 2.0.1 =
+* Maintenance: Just some code tidying. Nothing to see here. Move along, move along.
+
 = 2.0 =
 * Maintenance: Instead of working solely with Threads, the plugin has been extended to work on a number of different social platforms. A lot of the changes made here are for future expansion
 * Maintenance: New plugin icon and updated README to reflect the changes
@@ -94,5 +98,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 2.0 =
-* Converted from a Threads specific plugin to a more general version, now support Spoutible embeds as well
+= 2.0.1 =
+* Minor code improvements
