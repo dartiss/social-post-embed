@@ -46,8 +46,8 @@ function spte_threads_handler( $matches, $attr, $threads_url, $rawattr ) {
 	$matched = preg_match( '/https:\/\/www\.threads\.net\/(@.*)\/post\/.*/', $threads_url, $split );
 
 	if ( 1 === $matched ) {
-		$user = $split[1];
-		$url  = $split[0];
+		$user = esc_attr( $split[1] );
+		$url  = esc_attr( $split[0] );
 	} else {
 		$user = '';
 		$url  = false;
@@ -58,6 +58,8 @@ function spte_threads_handler( $matches, $attr, $threads_url, $rawattr ) {
 	if ( ! $url ) {
 		$embed = '<p>Error: Threads URL format not recognised.</p>';
 	} else {
+		$threads_url = esc_url( $threads_url );
+
 		// The following code makes use of a third party script from Threads (part of Meta). The Privacy Policy is at https://help.instagram.com/515230437301944
 		// PHPCS is disabled for this next line, so there's no nag to enqueue this script.
 		// phpcs:disable

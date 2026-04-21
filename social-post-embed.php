@@ -9,7 +9,7 @@
  * Plugin Name:       Social Post Embed
  * Plugin URI:        https://wordpress.org/plugins/social-post-embed/
  * Description:       Add embedding for various social media platforms to your WordPress posts
- * Version:           2.0.1
+ * Version:           2.0.2
  * Requires at least: 4.6
  * Requires PHP:      8.0
  * Author:            David Artiss
