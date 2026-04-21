@@ -3,9 +3,9 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: threads, spoutible, embed, social
 Requires at least: 4.6
-Tested up to: 6.5
+Tested up to: 6.9
 Requires PHP: 8.0
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,9 +81,16 @@ Yes. If it's not listed above, please let me know and I'll take a look at it.
 
 A number of plugins which make use of JavaScript appear to conflict with Meta's code. Known plugins so far include Query Monitor and Tada.
 
+= Do you support this plugin on forks of WordPress? =
+
+No. It was developed for WordPress and so forks remain unsupported. I have no intention of developing and testing this on any other version.
+
 == Changelog ==
 
 I use semantic versioning, with the first release being 1.0.
+
+= 2.0.2 =
+* Enhancement: Wordfence reported a cross-site scripting vulnerability ([CVE-2026-6809](https://www.cve.org/CVERecord?id=CVE-2026-6809)), which is now fixed with this release.
 
 = 2.0.1 =
 * Maintenance: Just some code tidying. Nothing to see here. Move along, move along.
@@ -98,5 +105,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 2.0.1 =
-* Minor code improvements
+= 2.0.2 =
+* Fixed a security vulnerability.
